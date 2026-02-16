@@ -1,0 +1,17 @@
+Anforderungen aus dem Projektauftrag (Modul 323 – HighscoreListe)
+
+Allgemeine Anforderungen
+------------------------
+- Highscore-Liste für Sudoku-Spiel: gesamte Anwendung
+- Eintrag enthält Name, Datum, Level, Zeit: HighScore-Klasse (highscore.js)
+- Maximal 10 Einträge pro Level: insert()-Funktion (highscoreAdmin.js)
+
+------------------------------
+1. Klasse `HighScore`: highscore.js
+2. Klasse `HighScoreAdmin`: highscoreAdmin.js
+3. Rückmeldung beim Einfügen (Rank oder Ablehnung): insert(), highscoreAdmin.js
+4. Sortierte Ausgabe nach Zeit: getScores(), highscoreAdmin.js
+5. CSV speichern/laden: loadFromFile(), saveToFile(), highscoreAdmin.js
+6. Konsolenmenü: index.js (menu-Funktion)
+7. Pure Functions und Trennung von Logik/Input/Output: toCSV(), fromCSV(), insert() intern
+8. Testrahmen mit CSV-Datei: test/sample-data.csv, geladen in index.js
